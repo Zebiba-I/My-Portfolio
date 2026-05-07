@@ -1,0 +1,47 @@
+/* ======= HERO ======= */
+.hero {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.hero h1 {
+  font-size: 50px;
+  background: linear-gradient(90deg, #7c3aed, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+  margin-block-start: 20px;
+  opacity: 0.8;
+}
+
+.hero-sub{
+  margin-top: 10px;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.hero-desc{
+  margin-top: 15px;
+  max-width: 600px;
+  margin-inline: auto;
+  opacity: 0.9;
+}
+
+.hero-badges{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hero-badges span{
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  font-size: 12px;
+}

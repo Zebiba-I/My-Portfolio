@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+/* ======== REST ========*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+
+/* ======= BODY ======= */
+body {
+  /* background: radial-gradient(circle at top, #b491e9, #70b4ef);
+  color: #f5f5f5; */
+  background: linear-gradient(
+    135deg,
+    #0fc2cc,
+    #3a7577
+  );
+color:#1f1f2e;
+  overflow-x: hidden;
+}
+
+/*242443 32785c 13135e */

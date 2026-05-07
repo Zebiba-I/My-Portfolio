@@ -13,104 +13,180 @@
 
   <body>
     <!-- ===============
-  HEADER
-  ================= -->
+    HEADER
+    ================= -->
     <header>
       <nav>
         <p class="logo">Zebiba</p>
-        <p>Full-Stack Developer</p>
+        <p class="tagline">Full-Stack Developer</p>
       </nav>
     </header>
 
-    <!-- ==============
-  HERO
-  ================= -->
-    <section class="hero">
-      <h1>Full-Stack Web Developer</h1>
-      <p>I build modern, fast and beautiful we applications.</p>
-      <button class="btn">View My Work</button>
+    <section class="container">
+      <!-- ==============
+     HERO
+     ================= -->
+      <section class="hero">
+        <h1>Crafting Elegant Digital Experiences</h1>
+
+        <p class="hero-sub">
+          Full-Stack Developer <strong>&bull;</strong> UI Designer <strong>&#8226;</strong> Problem
+          Solver
+        </p>
+
+        <p class="hero-desc">
+          I design and build modern, fast, and visually refined web applications that feel smooth,
+          premium, and alive.
+        </p>
+
+        <div class="hero-badges">
+          <span>✨ Clean UI</span>
+          <span>⚡ Fast Performance</span>
+          <span>📱 Responsive Design</span>
+        </div>
+        <button
+          class="btn"
+          onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })"
+        >
+          View Projects
+        </button>
+      </section>
+      <!-- =============
+   MAIN
+   ============== -->
+      <main>
+        <!-- ===============
+     ABOUT
+     ================= -->
+        <section class="section">
+          <h2>About Me</h2>
+          <div class="card">
+            I am Zebiba, a Full-Stack Web Developer passionate about building modern, responsive and
+            interactive websites using HTML, CSS, JavaScript and backend technologies.
+          </div>
+        </section>
+
+        <!-- ================
+     PROJECTS
+     ================= -->
+        <section class="section" id="projects">
+          <h2>Projects</h2>
+
+          <div class="card-grid">
+            <div
+              class="card project"
+              onclick="openProject(this)"
+              data-title="Netflix Clone"
+              data-img="images/netflix.png"
+              data-desc="A modern Netflix-inspired streaming UI with responsive layout, categories, and smooth hover interactions."
+              data-link="netflix.html"
+            >
+              <h3>Netflix Clone</h3>
+              <p>Streaming UI with modern design</p>
+            </div>
+
+            <div
+              class="card project"
+              onclick="openProject(this)"
+              data-title="Amazon Clone"
+              data-img="images/amazon.png"
+              data-desc="E-commerce interface with product grid, cart system, and checkout experience design."
+              data-link="amazon.html"
+            >
+              <h3>Amazon Clone</h3>
+              <p>E-commerce shopping UI</p>
+            </div>
+
+            <div
+              class="card project"
+              onclick="openProject(this)"
+              data-title="Portfolio Website"
+              data-img="images/portfolio.png"
+              data-desc="Personal portfolio website with animated UI, smooth layout, and modern branding design."
+              data-link="portfolio.html"
+            >
+              <h3>Portfolio Website</h3>
+              <p>Personal branding website</p>
+            </div>
+
+            <div
+              class="card project"
+              onclick="openProject(this)"
+              data-title="AI Chat App"
+              data-img="images/chatgpt.png"
+              data-desc="AI chat interface inspired by ChatGPT with clean UX and messaging system design."
+              data-link="chat.html"
+            >
+              <h3>AI Chat App</h3>
+              <p>Chat interface UI</p>
+            </div>
+
+            <div
+              class="card project"
+              onclick="openProject(this)"
+              data-title="Restaurant Website"
+              data-img="images/restaurant.png"
+              data-desc="Elegant restaurant landing page with menu display, booking section, and modern layout."
+              data-link="restaurant.html"
+            >
+              <h3>Restaurant Website</h3>
+              <p>Food & booking website</p>
+            </div>
+
+            <div
+              class="card project"
+              onclick="openProject(this)"
+              data-title="E-Commerce Store"
+              data-img="images/ecommerce.png"
+              data-desc="Full e-commerce UI with product listing, filtering, and shopping experience design."
+              data-link="ecommerce.html"
+            >
+              <h3>E-Commerce Store</h3>
+              <p>Online shopping platform UI</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- =================
+      SKILLS
+     ================== -->
+        <section class="section">
+          <h2>Skills</h2>
+          <div class="card skills">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Bootstrap</span>
+            <span>Responsive Design</span>
+            <span>Flexbox</span>
+            <span>Grid Layout</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MySQL</span>
+            <span>Jest (Testing)</span>
+            <span>Express.js</span>
+            <span>Git & GitHub</span>
+            <span>REST API</span>
+            <span>Problem Solving</span>
+          </div>
+        </section>
+
+        <!-- =================
+     CONTACT
+     ================== -->
+        <section class="section contact">
+          <h2>Contact Me</h2>
+          <div class="contact-box">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <textarea name="" id="" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <div>
+            <button class="btn">Send Message</button>
+          </div>
+        </section>
+      </main>
+      <footer>&copy;2026 Zebiba | Full-Stack Web Developer</footer>
     </section>
-
-    <!-- =============
-    MAIN
-    ============== -->
-    <main>
-      <!-- ===============
-      ABOUT 
-      ================= -->
-      <section class="section">
-        <h2>About Me</h2>
-        <div class="card">
-          I am Zebiba, a Full-Stack Web Developer passionate about building modern, responsive and
-          interactive websites using HTML, CSS, JavaScript and backend technologies.
-        </div>
-      </section>
-
-      <!-- ================
-      PROJECTS
-      ================= -->
-      <section class="section">
-        <h2>Projects</h2>
-
-        <div class="card-grid">
-
-          <div class="card-project" onclick="openProject('Netflix Clone', 'A full responsive streaming UI inspired by Netflix. Includes homepage, categories, and hover animations.')">
-            <h3>Netflix Clone</h3>
-            <p>Full responsive streaming UI built with modern design.</p>
-          </div>
-
-          <div class="card-project" onclick="openProject('Amazon Clone', 'E-commerce UI with product layout, cart system, and checkout flow design.')">
-            <h3>Amazon Clone</h3>
-            <P>E-commerce UI with product layout and cart system.</P>
-          </div>
-
-          <div class="card-project" onclick="openProject('Portfolio Website', 'Personal branding site with glowing UI, animations, and responsive layout.')">
-            <h3>Portfolio Website</h3>
-            <p>Personal branding website with animations</p>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- =================
-       SKILLS
-      ================== -->
-      <section class="section">
-        <h2>Skills</h2>
-        <div class="card skills">
-          <span>HTML5</span>
-          <span>CSS</span>
-          <span>Bootstrap</span>
-          <span>Media Query</span>
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>Node.js</span>
-          <span>MySQL</span>
-          <span>Jest</span>
-        </div>
-      </section>
-
-      <!-- =================
-      CONTACT
-      ================== -->
-      <section class="section contact">
-        <h2>Contact Me</h2>
-
-        <div class="contact-box">
-          <input type="text" placeholder="Your Name">
-          <input type="text" placeholder="Your Name">
-          <textarea name="" id="" rows="5" placeholder="Your Message"></textarea>
-        </div>
-
-        <div>
-          <button class="btn">Send Message</button>
-        </div>
-      </section>
-
-    </main>
-
-    <footer>
-      2026 Zebiba | Full-Stack Web Developer
-    </footer>
   </body>
 </html>
